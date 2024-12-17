@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>Login</title>
+            <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+        <meta name="robots" content="noindex, nofollow" />
+    </head>
+    <body>
+        <header>
+            <nav id="nav">
+                <div class="container bg-black rounded_50 position-relative main_ahead">
+                    <div class="main_heading d-flex justify-content-between align-items-center p-lg-4 px-3">
+                        <ul id="navbar"
+                            class="m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 mobile_view z_index_7 ps-4 ps-sm-5 pt-5 ps-lg-0 pt-lg-0">
+                            <li id="dropdown" class="position-relative">
+                                <a href="index.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                    Home
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Home 1</a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="about.html" class="navline position-relative text-white ">About
+                                    Us</a></li>
+                            <li><a href="contact.html" class="navline position-relative text-white">Contact Us
+                                </a></li>
+    
+                            <a href="index.html" class="site-logo d-lg-block d-none">
+                                <img src="img/header_logo_kalari.png" alt="" class="header_logo_main"> </a>
+    
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white d-lg-none d-block">Kalari Cheese
+                                </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                         Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Service 1</a></li>
+                                    <li><a href="#">Service 2 </a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                    <li><a href="#">Service 4</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                                  Frencise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                        <ul id="navbar"
+                            class=" ps-0 m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 justify-content-center align-items-center mobile_view z_index_7">
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white ">Kalari cheese
+                            </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                   Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">Service 1</a></li>
+                                    <li><a href="#">Service 2</a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                  Franchise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul> -->
+                            </li>
+                           <div class="main_cart_icon">
+                            <li>    
+                                <div class="cart_icon">
+                               <a href="http://localhost/kalari_factory/cart.html">  <img src="img/shopping-cart.png" alt="search"></a>
+                               </div>
+                           </li>
+                           <li>    
+                                <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                               
+                            </div>
+                           </li>
+                             
+                           </div>
+                        </ul>
+                        <div id="menubtn-icon" onclick="opennav()"
+                            class="d-lg-none z_index_9 pe-2 cursor_pointer menu_icon">
+                            <div class="line"></div>
+                            <div class="line1 my_6 my-1 mx-auto"></div>
+                            <div class="line2"></div>
+                        </div>
+                       
+                        <div class="d-lg-none">
+                            <div class="main_cart_icon">
+                                <li>    
+                                    <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/cart.html"> 
+                                        <img src="img/shopping-cart.png" alt="search"></a>
+                                   </div>
+                               </li>
+                               <li>    
+                                    <div class="cart_icon">
+                                        <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                                </div>
+                               </li>
+                                 
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about_banner" style="background-image: url(img/banner_login.png);">
+            <div class="container">
+                   <div class="content_about">
+                     <h1>Login Now</h1>
+                   </div>
+            </div>
+        </section>
+
+        <div class="login_form py_8">
+            <div class="form_contact">
+                <div class="heading_contact_form">
+                    <h2>Login Form</h2>
+                </div>
+                <form action="" method="POST" class="main_form_kalari">
+                    <input type="hidden" name="_token" value="oUszCn3ZMoHzVai0vrmEwTGZJYEawbgWBB8hhNLx" autocomplete="off">   
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="name" placeholder="Name" aria-label="First name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="Last Name" placeholder="Last Name" aria-label="Last name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="Email" placeholder="Email" aria-label="Email" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="password" placeholder="password" aria-label="password" required="">
+                        </div>
+                    </div>
+        
+                    <div class="btn_form_submit">
+                        <a href="#" class="btn_view_all">Submit</a>
+                    </div>
+
+                    <div class="btn_register_now">
+                        <a href="http://localhost/kalari_factory/register.html">Register Now</a>
+                    </div>
+                </form>
+        </div>
+        </div>
+         
+        <footer class="py_8 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                   <div class="footer_lgo">
+                    <a href="#"><img src="img/header_logo_kalari.png" alt="">
+                    </a>
+                   </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex possimus rerum amet modi vero nobis eius, sed repellendus distinctio quo ratione? Vel assumenda laborum enim dolorum! Vel, fugit tenetur. </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Contact-Us</li>
+                            <li><a href="#" class="d-flex flex-column mb-1"> <span> Location :</span>3444 lorem lorem</a>
+                            </li>
+                            <li><a href="#" class="d-flex flex-column"> <span> BOOK A TABLE
+                                        :</span>testing@gmail.com <br>12345678</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Hour open</li>
+                            <li><a href="#" class="mb-2"> <span> Monday - Friday :</span> 9:00- 22:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Saturday :</span> 10:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Sunday :</span> 5:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Holidays :</span> Closed</a></li>
+                            <li><a href="#" class="mb-2"> <span> Happy Hours :</span> 18:00 - 20:00</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">How to find us ?</li>
+                            <li><a href="#" class="mb-3 d-inline-block"> <span> call us : </span>12346789</a></li>
+                            <li><a href="#" class="d-flex flex-column"><span>information coffee house :
+                                    </span>testing@gmail.com <br>12345677</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyrightline position-relative mt-5 mb-4"></div>
+    
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <p>Copyright © 2023 themesflat. All Rights Reserved.</p>
+
+                        
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="d-flex gap-3 align-items-center  conditions_main">
+                                <a href="privacy_policy.html">privacy-policy</a>
+                                <a href="refund_policy.html">Refund_policy</a>
+                                <a href="terms_condition.html">Terms & Conditions</a>
+                            </div>
+                        </div>
+    
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="mb-0">Follow-us :</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="img/instagram.png" alt="insta"></a>
+                                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                                <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+       
+  </body>
+</html>
