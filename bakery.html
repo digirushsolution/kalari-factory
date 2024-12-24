@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+         <title>Bakery</title>
+            <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav id="nav">
+                <div class="container bg-black rounded_50 position-relative main_ahead">
+                    <div class="main_heading d-flex justify-content-between align-items-center p-lg-4 px-3">
+                        <ul id="navbar"
+                            class="m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 mobile_view z_index_7 ps-4 ps-sm-5 pt-5 ps-lg-0 pt-lg-0">
+                            <li id="dropdown" class="position-relative">
+                                <a href="index.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                    Home
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Home 1</a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="about.html" class="navline position-relative text-white ">About
+                                    Us</a></li>
+                            <li><a href="contact.html" class="navline position-relative text-white">Contact Us
+                                </a></li>
+    
+                            <a href="index.html" class="site-logo d-lg-block d-none">
+                                <img src="img/header_logo_kalari.png" alt="" class="header_logo_main"> </a>
+    
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white d-lg-none d-block">Kalari Cheese
+                                </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                         Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Service 1</a></li>
+                                    <li><a href="#">Service 2 </a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                    <li><a href="#">Service 4</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                                  Frencise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                        <ul id="navbar"
+                            class=" ps-0 m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 justify-content-center align-items-center mobile_view z_index_7">
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white ">Kalari cheese
+                            </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                   Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">Service 1</a></li>
+                                    <li><a href="#">Service 2</a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                  Franchise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul> -->
+                            </li>
+                           <div class="main_cart_icon">
+                            <li>    
+                                <div class="cart_icon">
+                               <a href="http://localhost/kalari_factory/cart.html">  <img src="img/shopping-cart.png" alt="search"></a>
+                               </div>
+                           </li>
+                           <li>    
+                                <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                               
+                            </div>
+                           </li>
+                             
+                           </div>
+                        </ul>
+                        <div id="menubtn-icon" onclick="opennav()"
+                            class="d-lg-none z_index_9 pe-2 cursor_pointer menu_icon">
+                            <div class="line"></div>
+                            <div class="line1 my_6 my-1 mx-auto"></div>
+                            <div class="line2"></div>
+                        </div>
+                       
+                        <div class="d-lg-none">
+                            <div class="main_cart_icon">
+                                <li>    
+                                    <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/cart.html"> 
+                                        <img src="img/shopping-cart.png" alt="search"></a>
+                                   </div>
+                               </li>
+                               <li>    
+                                    <div class="cart_icon">
+                                        <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                                </div>
+                               </li>
+                                 
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="kalari_home_banner">
+            <div class="slick-slider-banner">
+            <div class="element element-1">
+                <div class="under_banner_content">
+                    <span>Lorem, ipsum dolor sit</span>
+                    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur enim, ipsum molestiae officia quibusdam, illo quod veniam repellat quis impedit, doloremque commodi. Vero, ea quae impedit sit modi quod recusandae!</p>
+                    <div class="btn_kalari">
+                      <div class="btn_flex_kalri">
+                        <a href="#" class="btn_view_all">View All Menu</a>
+                        <a href="#" class="book_a_table">Book A Table</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="element element-2">    
+                <div class="under_banner_content">
+                <span>Lorem, ipsum dolor sit</span>
+                <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur enim, ipsum molestiae officia quibusdam, illo quod veniam repellat quis impedit, doloremque commodi. Vero, ea quae impedit sit modi quod recusandae!</p>
+                <div class="btn_kalari">
+                    <div class="btn_flex_kalri">
+                      <a href="#" class="btn_view_all">View All Menu</a>
+                      <a href="#" class="book_a_table">Book A Table</a>
+                    </div>
+                  </div>
+            </div></div>
+              </div>
+        </section>
+
+        <section class="about_us py_8">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="img_about_kalari">
+                            <img src="img/bakery_about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about_content">
+                            <h2>About Us</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias optio rem, quidem eveniet et voluptates ipsam soluta. Architecto officiis ex delectus numquam aut laudantium similique molestias dicta, blanditiis atque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias optio rem, quidem eveniet et voluptates ipsam soluta. Architecto officiis ex delectus numquam aut laudantium similique molestias dicta, blanditiis atque.
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias optio rem, quidem eveniet et voluptates ipsam soluta. Architecto officiis ex delectus numquam aut laudantium similique molestias dicta, blanditiis atque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit alias optio rem, quidem eveniet et voluptates ipsam soluta. Architecto officiis ex delectus numquam aut laudantium similique molestias dicta, blanditiis atque.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                       
+                                <div class="btn_about">
+                                    <a href="#" class="btn_view_all">Read More</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product_range_bakery py_8 pt-0">
+            <div class="container">
+                <div class="heading_products">
+                    <h2>Product</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="under_product">
+                        <div class="under_flx_main">
+                            <div class="product_img">
+                                <img src="img/puff_product_1.png" alt="">
+                            </div>
+                            <div class="artboard_img">
+                                <img src="img/Artboard_1.png" alt="">
+                            </div>
+                        </div>
+                            <div class="content_bottom">
+                               
+                             <h3>Puff Pastry</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="under_product">
+                        <div class="under_flx_main">
+                            <div class="product_img">
+                                <img src="img/puff_product_2.png" alt="">
+                            </div>
+                            <div class="artboard_img">
+                                <img src="img/Artboard_2.png" alt="">
+                            </div>
+                        </div>
+                            <div class="content_bottom">
+                               
+                             <h3>Doughnut</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="under_product">
+                        <div class="under_flx_main">
+                            <div class="product_img">
+                                <img src="img/puff_product_3.png" alt="">
+                            </div>
+                            <div class="artboard_img">
+                                <img src="img/Artboard_3.png" alt="">
+                            </div>
+                        </div>
+                            <div class="content_bottom">
+                               
+                             <h3>Rye Breads</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="under_product">
+                        <div class="under_flx_main">
+                            <div class="product_img">
+                                <img src="img/puff_product_4.png" alt="">
+                            </div>
+                            <div class="artboard_img">
+                                <img src="img/Artboard_4.png" alt="">
+                            </div>
+                        </div>
+                            <div class="content_bottom">
+                               
+                             <h3>Roll Cake</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="freshly_bake_bread py_8">
+            <div class="container">
+                <div class="main_undeer_frehly">
+                    <h2>freshly baked bread every morning</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate atque consequuntur facilis laboriosam, dolorum harum fugit a nemo at maxime velit, adipisci vitae aperiam iusto eos quo culpa, deserunt doloribus.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet tenetur, animi molestiae magnam ullam qui repellendus dignissimos temporibus sed reprehenderit dolore, ab tempora. Laudantium id nulla distinctio quia esse!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet tenetur, animi molestiae magnam ullam qui repellendus dignissimos temporibus sed reprehenderit dolore, ab tempora. Laudantium id nulla distinctio quia esse!</p>
+                    <div class="btn_freshly">
+                        <a href="#" class="btn_view_all">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits_of_breads py_8">
+            <div class="container">
+                <div class="heading_benefit">
+                    <h2>Benefits of breads</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt magni et quo, deleniti nemo fugiat blanditiis pariatur temporibus exercitationem esse amet magnam quia incidunt. Similique repellat nisi libero consequatur tempora.</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="under_benefit">
+                            <ul>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>There’s so much choice</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>It tastes great</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>Prebiotic properties</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis .</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img_benefits">
+                            <img src="img/benefit_bred.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="under_benefit">
+                            <ul>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>Fuel for longer</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>Folic acid boost</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="under_benefit_sec">
+                                        <h4>It’s cost effective</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, temporibus veritatis.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bread_multiple_taste py_8">
+            <div class="container">
+                <div class="main_uneer_bread">
+                    <div class="under_bread_multiple">
+                        <h4>One Bread, multiple taste</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptates sunt quos numquam! Libero consectetur delectus soluta odit, sed sapiente quas odio ullam molestiae, minus alias deleniti dolorum laudantium quo?</p>
+                        <div class="bread_mutlitple">
+                            <a href="#" class="btn_view_all">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="private_event py_8">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="events_images">
+                            <img src="img/private_event_img.jpg" alt="">
+                            <img src="img/coffee_cup.png" alt="" class="position_set">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right_according">
+                            <div class="heading_accordian">
+                                <span>Private Events</span>
+                                <h2>The Perfect Venue Special Events</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam atque quisquam quod consequuntur eos illum officiis consequatur eius laudantium rem, asperiores ducimus debitis,</p>
+                            </div>
+
+                            <div class="accordian_main">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          Accordion Item
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                         <p> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                            plugin adds the appropriate classes that we use to style each element. </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Accordion Item
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                                plugin adds the appropriate classes that we use to style each element. </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Accordion Item
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                                                plugin adds the appropriate classes that we use to style each element. </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest_blog_sec py_8 pt-0">
+            <div class="container">
+                <div class="heading_latest_blog">
+                    <h2>Latest Blog</h2>
+                </div>
+                <div class="latest_blog_sec_un">
+                    <div class="item">
+                        <div class="main_under_latest">
+                            <div class="latest_img">
+                                <img src="img/restaurant-interior.jpg" alt="">
+                            </div>
+                            <div class="content_latest">
+                                <h3>What determines the color of the coffee extract?</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, suscipit nam. Inventore porro dicta sapiente blanditiis ipsa repellendus esse dolore sit optio, non fugit, animi recusandae! Magni cupiditate esse cumque.</p>
+                                <div class="btn_latest_blog">
+                                    <a href="#" class="btn_view_all">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="main_under_latest">
+                            <div class="latest_img">
+                                <img src="img/restaurant-interior.jpg" alt="">
+                            </div>
+                            <div class="content_latest">
+                                <h3>What determines the color of the coffee extract?</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, suscipit nam. Inventore porro dicta sapiente blanditiis ipsa repellendus esse dolore sit optio, non fugit, animi recusandae! Magni cupiditate esse cumque.</p>
+                                <div class="btn_latest_blog">
+                                    <a href="#" class="btn_view_all">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="main_under_latest">
+                            <div class="latest_img">
+                                <img src="img/restaurant-interior.jpg" alt="">
+                            </div>
+                            <div class="content_latest">
+                                <h3>What determines the color of the coffee extract?</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, suscipit nam. Inventore porro dicta sapiente blanditiis ipsa repellendus esse dolore sit optio, non fugit, animi recusandae! Magni cupiditate esse cumque.</p>
+                                <div class="btn_latest_blog">
+                                    <a href="#" class="btn_view_all">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="main_under_latest">
+                            <div class="latest_img">
+                                <img src="img/restaurant-interior.jpg" alt="">
+                            </div>
+                            <div class="content_latest">
+                                <h3>What determines the color of the coffee extract?</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, suscipit nam. Inventore porro dicta sapiente blanditiis ipsa repellendus esse dolore sit optio, non fugit, animi recusandae! Magni cupiditate esse cumque.</p>
+                                <div class="btn_latest_blog">
+                                    <a href="#" class="btn_view_all">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <footer class="py_8 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                   <div class="footer_lgo">
+                    <a href="#"><img src="img/header_logo_kalari.png" alt="">
+                    </a>
+                   </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex possimus rerum amet modi vero nobis eius, sed repellendus distinctio quo ratione? Vel assumenda laborum enim dolorum! Vel, fugit tenetur. </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Contact-Us</li>
+                            <li><a href="#" class="d-flex flex-column mb-1"> <span> Location :</span>3444 lorem lorem</a>
+                            </li>
+                            <li><a href="#" class="d-flex flex-column"> <span> BOOK A TABLE
+                                        :</span>testing@gmail.com <br>12345678</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Hour open</li>
+                            <li><a href="#" class="mb-2"> <span> Monday - Friday :</span> 9:00- 22:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Saturday :</span> 10:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Sunday :</span> 5:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Holidays :</span> Closed</a></li>
+                            <li><a href="#" class="mb-2"> <span> Happy Hours :</span> 18:00 - 20:00</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">How to find us ?</li>
+                            <li><a href="#" class="mb-3 d-inline-block"> <span> call us : </span>12346789</a></li>
+                            <li><a href="#" class="d-flex flex-column"><span>information coffee house :
+                                    </span>testing@gmail.com <br>12345677</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyrightline position-relative mt-5 mb-4"></div>
+    
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <p>Copyright © 2023 themesflat. All Rights Reserved.</p>
+    
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="mb-0">Follow-us :</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="img/instagram.png" alt="insta"></a>
+                                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                                <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+        // JavaScript for responsive menu toggle
+        function toggleMenu() {
+          const menus = document.querySelectorAll('.menu');
+          menus.forEach(menu => menu.classList.toggle('open'));
+        }
+      </script>
+      <script>
+        $(document).ready(function () {
+            $('.slick-slider-banner').slick({
+                fade: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+            $('.under_testimonial_content').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 4000,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+         <script>
+            $(document).ready(function () {
+                $('.latest_blog_sec_un').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    speed: 4000,
+                    autoplay: true,
+                    autoplaySpeed: 7000,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        </script>
+    <script>
+        let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},50)
+
+})
+    </script>
+    <script>
+        function opennav() {
+    const nav = document.querySelector('.mobile_view');
+    const menuIcon = document.querySelector('#menubtn-icon');
+
+    if (nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        menuIcon.classList.remove('cross');
+    } else {
+        nav.classList.add('open');
+        menuIcon.classList.add('cross');
+    }
+}
+
+document.querySelectorAll('#dropdown > a').forEach(function (dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (event) {
+        const dropdownMenu = this.nextElementSibling;
+        const isVisible = dropdownMenu.style.display === 'block';
+
+        document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+            menu.style.display = 'none';
+        });
+
+        dropdownMenu.style.display = isVisible ? 'none' : 'block';
+
+        event.preventDefault();
+    });
+});
+    </script>
+
+    <script>
+        let circle=document.querySelector('.circle');
+window.addEventListener('mousemove',function(mp){
+   circle.style.transform=`translate(${mp.clientX}px,${mp.clientY}px)`
+})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <title>Franchise</title>
+            <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    </head>
+    <body>
+
+        <header>
+            <nav id="nav">
+                <div class="container bg-black rounded_50 position-relative main_ahead">
+                    <div class="main_heading d-flex justify-content-between align-items-center p-lg-4 px-3">
+                        <ul id="navbar"
+                            class="m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 mobile_view z_index_7 ps-4 ps-sm-5 pt-5 ps-lg-0 pt-lg-0">
+                            <li id="dropdown" class="position-relative">
+                                <a href="index.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                    Home
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Home 1</a></li>
+                                    <li><a href="#">Home 2 </a></li>
+                                </ul> -->
+                            </li>
+                            <li><a href="about.html" class="navline position-relative text-white ">About
+                                    Us</a></li>
+                            <li><a href="contact.html" class="navline position-relative text-white">Contact Us
+                                </a></li>
+    
+                            <a href="index.html" class="site-logo d-lg-block d-none">
+                                <img src="img/header_logo_kalari.png" alt="" class="header_logo_main"> </a>
+    
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white d-lg-none d-block">Kalari Cheese
+                                </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                         Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">Service 1</a></li>
+                                    <li><a href="#">Service 2 </a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                    <li><a href="#">Service 4</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2 d-lg-none d-block">
+                                  Frencise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text-white">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                        <ul id="navbar"
+                            class=" ps-0 m-0 d-flex flex-column list-unstyled flex-lg-row gap-4 gap-xxl-5 justify-content-center align-items-center mobile_view z_index_7">
+                            <li><a href="kalari_cheese.html" class="navline position-relative text-white ">Kalari cheese
+                            </a></li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="cafe.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                   Cafe
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">Service 1</a></li>
+                                    <li><a href="#">Service 2</a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                </ul> -->
+                            </li>
+                            <li id="dropdown" class="position-relative">
+                                <a href="frenchise.html"
+                                    class="navline position-relative text-white d-flex align-items-center gap-2">
+                                  Franchise
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li><a href="#" class="text_yellow">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Services</a></li>
+                                </ul> -->
+                            </li>
+                           <div class="main_cart_icon">
+                            <li>    
+                                <div class="cart_icon">
+                               <a href="http://localhost/kalari_factory/cart.html">  <img src="img/shopping-cart.png" alt="search"></a>
+                               </div>
+                           </li>
+                           <li>    
+                                <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                               
+                            </div>
+                           </li>
+                             
+                           </div>
+                        </ul>
+                        <div id="menubtn-icon" onclick="opennav()"
+                            class="d-lg-none z_index_9 pe-2 cursor_pointer menu_icon">
+                            <div class="line"></div>
+                            <div class="line1 my_6 my-1 mx-auto"></div>
+                            <div class="line2"></div>
+                        </div>
+                       
+                        <div class="d-lg-none">
+                            <div class="main_cart_icon">
+                                <li>    
+                                    <div class="cart_icon">
+                                    <a href="http://localhost/kalari_factory/cart.html"> 
+                                        <img src="img/shopping-cart.png" alt="search"></a>
+                                   </div>
+                               </li>
+                               <li>    
+                                    <div class="cart_icon">
+                                        <a href="http://localhost/kalari_factory/login.html"> <img src="img/user_cart.png" alt="search"></a>
+                                </div>
+                               </li>
+                                 
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="about_banner" style="background-image: url(img/bg_home_banner1.jpg);">
+            <div class="container">
+                   <div class="content_about">
+                     <h1>Bring The Kalari Factory Experience to Your City  Partner with Us! </h1>
+                     </h1>
+                     <p class="ready_main">Are you ready to join the food revolution? The Kalari Factory, a fast food cafe in J&K, invites passionate entrepreneurs to bring our unique flavors and experiences to new locations. Become a part of a growing brand redefining fast food culture in India.</p>
+                     <div class="btn_flex_kalri">
+                        <a href="kalari_cheese.html" class="btn_view_all">Discover the Benefits!
+                        </a>
+                      </div>
+                   </div>
+            </div>
+        </section>
+
+        <section class="about_us py_8">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="img_about_kalari">
+                            <img src="img/about_kalari_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about_content">
+                            <h2>Taste Success with The Kalari Factory!</h2>
+                            <p>At The Kalari Factory, we don't just serve delicious food – we deliver an unforgettable experience. With our proven business model and unmatched brand identity, you can own a piece of J&K’s most-loved fast food cafe and revolutionize your area's food industry. Whether you're an experienced entrepreneur or a passionate first-timer, we’re here to ensure your journey is flavorful and successful!
+
+                            </p>
+                          <ul class="franchis_ul">
+                            <li>
+                                <p>Trusted Brand: Leverage the reputation of J&K’s first fast food cafe.
+                                </p>
+                            </li>
+                            <li>
+                                <p>High Demand: Serve an exclusive menu customers love and keep returning for.</p>
+                            </li>
+                            <li>
+                                <p>Complete Support: Get hands-on training, operational guidance, and marketing assistance.
+                                </p>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ongoing_fees_main py_8">
+                 <div class="container">
+                    <div class="heading_ongoing">
+                        <h2>Why Partner with The Kalari Factory?</h2>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="img_franchise">
+                                <img src="img/franchise_left.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-sm-12">
+                            <div class="col-md-12 mb-3">
+                                <div class="main_howit_works">
+                                    <h3>Proven Success</h3>
+                                    <p>Tap into a strong brand with a proven history in the fast food market. Our expanding footprint is a testament to The Kalari Factory's success and reliability.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="main_howit_works">
+                                    <h3>Unique Concept</h3>
+                                    <p>Join an innovative fast-food cafe that combines traditional flavors with a modern twist. Our menu and dining experience are exciting and unique, making us stand out in the highly competitive market.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="main_howit_works">
+                                    <h3>Comprehensive Support System</h3>
+                                    <p>From setup to regular operations, we have the back. Our dedicated and trained team provides training for operation, operational guidance, and a continuous support system to assist you in your success.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-12 mb-3">
+                                <div class="main_howit_works">
+                                    <h3>Profitable Business Model</h3>
+                                    <p>Our process is designed to maximize growth through a profitable business model; with our streamlined processes and managed costs, a high return on investment is achievable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <div class="main_howit_works">
+                                    <h3>Marketing Assistance</h3>
+                                    <p>We will give you all the benefits of our well-established reputation and promotional strategies designed to work.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+        </section>
+
+        <section class="operating_fees py_8">
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <div class="under_ongoing_fees">
+                            <h3>Franchise Requirements</h3>
+                            <p>We seek passionate individuals who deliver exceptional customer experiences to succeed with The Kalari Factory. Here are the key requirements to join our growing family
+                            </p>
+                            <ul>
+                                <li>
+                                    <p><strong>Space: </strong>needs a minimum of 1,000 to 1,500 sq. ft. of space in high-traffic locations like shopping malls or busy street corners. It must be easily accessible and attract all types of food lovers. 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Investment:</strong> The estimated investment to open a Kalari Factory cafe is ₹25 Lakhs to ₹35 Lakhs, including setup, equipment, and branding. A franchise fee of ₹5 Lakhs covers access to our business model, training, and support.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p><strong>Commitment:</strong> We’re seeking franchisees who share our love for great food and exceptional service. You're the perfect fit for us if you’re committed to upholding high standards, delivering top-quality food, and creating a welcoming vibe for customers! 
+                                        .</p>
+                                </li>
+                    
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <div class="under_ongoing_fees">
+                            <h3>The Franchise Process</h3>
+                            <p>Join The Kalari Factory with ease! Provide a step-by-step guide to help users understand how to become a franchisee.
+                            </p>
+                          <ul>
+                            <li>
+                                <p><strong>Inquiry Submission:</strong> Start your journey by filling out our franchise inquiry form.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Personal Consultation:</strong> Let's meet with our team to discuss this excellent opportunity to explore how we can collaborate
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Location Approval:</strong> We’ll select the perfect site to bring The Kalari Factory experience to your community.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Agreement Finalization:   </strong> Once we identify the right spot, we will finalize the formalities and sign the franchise agreement.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Training & Setup:</strong> Get expert training and all the support you need to launch your franchise, from operations to marketing.</p>
+                            </li>
+                            <li>
+                                <p><strong>Grand Opening: </strong>Celebrate your grand opening with a bang as you welcome customers to their new favorite cafe!  
+                                </p>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <section class="book_table py_8">
+            <div class="container">
+                <div class="main_content_table">
+                    <h2>Start Your Kalari Journey Today!</h2>
+                    <p>Are you interested in taking the first step? Join the Kalari Factory family today and bring our unique flavors to your city. Fill out the form below, or contact us for more information.
+                    </p>
+                    <div class="btn_book_table">
+                        <a href="#" class="btn_view_all" data-bs-toggle="modal" data-bs-target="#exampleModal" tabindex="-1">Get Started Today!</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about_us py_8">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="about_content">
+                            <h2>Grab the Opportunity -Let’s Create the Future Together</h2>
+                            <p>It's time to rise and shine to enter the new world of success and innovation. The Kalari Factory is now ready for expansion and inviting the finest visionary entrepreneurs to be part of our latest adventure. With a well-established business model, an exclusive food concept, and excellent support, the offer with us will give an extraordinary experience. We need to join hands to bring The Kalari Factory's flavors and experiences to cities in India.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="img_about_kalari">
+                            <img src="img/about_kalari_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py_8 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                   <div class="footer_lgo">
+                    <a href="#"><img src="img/header_logo_kalari.png" alt="">
+                    </a>
+                   </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex possimus rerum amet modi vero nobis eius, sed repellendus distinctio quo ratione? Vel assumenda laborum enim dolorum! Vel, fugit tenetur. </p>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Contact-Us</li>
+                            <li><a href="#" class="d-flex flex-column mb-1"> <span> Location :</span>3444 lorem lorem</a>
+                            </li>
+                            <li><a href="#" class="d-flex flex-column"> <span> BOOK A TABLE
+                                        :</span>testing@gmail.com <br>12345678</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">Hour open</li>
+                            <li><a href="#" class="mb-2"> <span> Monday - Friday :</span> 9:00- 22:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Saturday :</span> 10:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Sunday :</span> 5:00- 23:00</a></li>
+                            <li><a href="#" class="mb-2"> <span> Holidays :</span> Closed</a></li>
+                            <li><a href="#" class="mb-2"> <span> Happy Hours :</span> 18:00 - 20:00</a></li>
+    
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <ul class="p-0">
+                            <li class="footerline position-relative mb-4">How to find us ?</li>
+                            <li><a href="#" class="mb-3 d-inline-block"> <span> call us : </span>12346789</a></li>
+                            <li><a href="#" class="d-flex flex-column"><span>information coffee house :
+                                    </span>testing@gmail.com <br>12345677</a></li>
+                        </ul>
+                    </div>
+                    <div class="copyrightline position-relative mt-5 mb-4"></div>
+    
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <p>Copyright © 2023 themesflat. All Rights Reserved.</p>
+
+                        
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="d-flex gap-3 align-items-center  conditions_main">
+                                <a href="privacy_policy.html">privacy-policy</a>
+                                <a href="refund_policy.html">Refund_policy</a>
+                                <a href="terms_condition.html">Terms & Conditions</a>
+                            </div>
+                        </div>
+    
+                        <div class="d-flex align-items-center gap-4">
+                            <p class="mb-0">Follow-us :</p>
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                                <a href="#"><img src="img/instagram.png" alt="insta"></a>
+                                <a href="#"><img src="img/twitter.png" alt="twitter"></a>
+                                <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+           <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form_contact">
+                <div class="heading_contact_form">
+                    <h2>Contact Form</h2>
+                </div>
+                <form action="" method="POST" class="main_form_kalari">
+                    <input type="hidden" name="_token" value="oUszCn3ZMoHzVai0vrmEwTGZJYEawbgWBB8hhNLx" autocomplete="off">   
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="name" placeholder="Name" aria-label="First name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="Last Name" placeholder="Last Name" aria-label="Last name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="phone" maxlength="10" placeholder="Mobile No." aria-label="Last name" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="Address" placeholder="Name" aria-label="Address" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="City" placeholder="City" aria-label="City" required="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="State" placeholder="State" aria-label="State" required="">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select class="form-select" name="assistance_type" aria-label="Default select example" required="">
+                                <option selected="" value="">Services</option>
+                                <option value="1">Chesse </option>
+                                <option value="2">Chesse</option>
+                                <option value="3">Chesse</option>
+                    
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" name="zipcode" maxlength="10" placeholder="Zip Code" aria-label="Last name" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn_form_submit">
+                        <a href="#" class="btn_view_all">Submit</a>
+                    </div>
+                </form>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+        // JavaScript for responsive menu toggle
+        function toggleMenu() {
+          const menus = document.querySelectorAll('.menu');
+          menus.forEach(menu => menu.classList.toggle('open'));
+        }
+      </script>
+      <script>
+        $(document).ready(function () {
+            $('.slick-slider-banner').slick({
+                fade: true,
+                speed: 1000,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function () {
+            $('.under_testimonial_content').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 4000,
+                autoplay: true,
+                autoplaySpeed: 7000,
+                arrows: false,
+                dots: true,
+            });
+        });
+    </script>
+         <script>
+            $(document).ready(function () {
+                $('.latest_blog_sec_un').slick({
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    speed: 4000,
+                    autoplay: true,
+                    autoplaySpeed: 7000,
+                    arrows: false,
+                    dots: true,
+                });
+            });
+        </script>
+    <script>
+        let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},50)
+
+})
+    </script>
+    <script>
+        function opennav() {
+    const nav = document.querySelector('.mobile_view');
+    const menuIcon = document.querySelector('#menubtn-icon');
+
+    if (nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        menuIcon.classList.remove('cross');
+    } else {
+        nav.classList.add('open');
+        menuIcon.classList.add('cross');
+    }
+}
+
+document.querySelectorAll('#dropdown > a').forEach(function (dropdownToggle) {
+    dropdownToggle.addEventListener('click', function (event) {
+        const dropdownMenu = this.nextElementSibling;
+        const isVisible = dropdownMenu.style.display === 'block';
+
+        document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+            menu.style.display = 'none';
+        });
+
+        dropdownMenu.style.display = isVisible ? 'none' : 'block';
+
+        event.preventDefault();
+    });
+});
+    </script>
+  
+  </body>
+</html>
