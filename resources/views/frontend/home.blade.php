@@ -174,26 +174,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="1">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-1">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="1">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-1">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,27 +209,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="2">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-2">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="2">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-2">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,27 +245,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="3">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-3">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="3">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-3">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -300,26 +280,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="4">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-4">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="4">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-4">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -342,27 +316,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="5">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-5">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="5">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-6">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -385,27 +352,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="6">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-6">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="6">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-6">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -428,27 +388,20 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="7">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-7">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="7">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-7">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -470,27 +423,21 @@
                         <div class="btn_add_cart">
                             <p>Espresso shots topped with hot water</p>
                             <div class="flx_main_cart">
-                                <a href="#" class="add_btn_cart">
-                                    <div class="wrapper">
-
-                                        <div class="product-qty">
-                                            <button id="decrement">
-                                                -
-                                            </button>
-                                            <div class="price_add">
-                                                <span id="quantity">0</span>
-                                            </div>
-                                            <button id="increment">
-                                                +
-                                            </button>
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="8">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-8">0</span>
                                         </div>
+                                        <button class="increment" data-product-id="8">+</button>
                                     </div>
-                                    <div class="img_add_to_cart">
-                                        <a href="{{route('single_page')}}">
-                                            <img src="{{ asset('public/asset/img/shopping-cart.png')}}"
-                                                alt="search"></a>
-                                    </div>
-                                </a>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <a href="{{route('cart')}}"></a>
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                        id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-8">0</span>
+                                </div>
                             </div>
                         </div>
                     </div>

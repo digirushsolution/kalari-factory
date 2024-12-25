@@ -4,17 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="{{ asset('admin/images/png/favicon.jpg')}}" type="image/png" />
-	<link href="{{ asset('admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
-	<link href="{{ asset('admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
-	<link href="{{ asset('admin/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
-	<link href="{{ asset('admin/css/pace.min.css') }}" rel="stylesheet" />
-	<script src="{{ asset('admin/js/pace.min.js') }}"></script>
-	<link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('admin/css/bootstrap-extended.css') }}" rel="stylesheet">
+	<link rel="icon" href="{{ asset('public/admin/images/png/favicon.jpg')}}" type="image/png" />
+	<link href="{{ asset('public/admin/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
+	<link href="{{ asset('public/admin/plugins/perfect-scrollbar/css/perfect-scrollbar.css') }}" rel="stylesheet" />
+	<link href="{{ asset('public/admin/plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
+	<link href="{{ asset('public/admin/css/pace.min.css') }}" rel="stylesheet" />
+	<script src="{{ asset('public/admin/js/pace.min.js') }}"></script>
+	<link href="{{ asset('public/admin/css/bootstrap.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('public/admin/css/bootstrap-extended.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-	<link href="{{ asset('admin/css/app.css') }}" rel="stylesheet">
-	<link href="{{ asset('admin/css/icons.css') }}" rel="stylesheet">
+	<link href="{{ asset('public/admin/css/app.css') }}" rel="stylesheet">
+	<link href="{{ asset('public/admin/css/icons.css') }}" rel="stylesheet">
 	<title>Kalari Factory</title>
 </head>
 
@@ -28,7 +28,7 @@
 							<div class="card-body">
 								<div class="p-4">
 									<div class="mb-3 text-center">
-									    <img src="{{ asset('assets/images/png/favicon.jpg')}}" width="120" alt="digirusholution">
+									    <img src="{{ asset('public/assets/images/png/favicon.jpg')}}" width="120" alt="digirusholution">
 									</div>
 									<div class="text-center mb-4">
 										<h5 class="">The Kalari Factory</h5>
@@ -86,11 +86,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="{{ asset('admin/js/bootstrap.bundle.min.js')}}"></script>
-	<script src="{{ asset('admin/js/jquery.min.js')}}"></script>
-	<script src="{{ asset('admin/plugins/simplebar/js/simplebar.min.js')}}"></script>
-	<script src="{{ asset('admin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
-	<script src="{{ asset('admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
+	<script src="{{ asset('public/admin/js/bootstrap.bundle.min.js')}}"></script>
+	<script src="{{ asset('public/admin/js/jquery.min.js')}}"></script>
+	<script src="{{ asset('public/admin/plugins/simplebar/js/simplebar.min.js')}}"></script>
+	<script src="{{ asset('public/admin/plugins/metismenu/js/metisMenu.min.js')}}"></script>
+	<script src="{{ asset('public/admin/plugins/perfect-scrollbar/js/perfect-scrollbar.js')}}"></script>
 	<script>
 		$(document).ready(function () {
 			$("#show_hide_password a").on('click', function (event) {
@@ -107,7 +107,7 @@
 			});
 		});
 	</script>
-	<script src="{{ asset('assets/js/app.js')}}"></script>
+	<script src="{{ asset('public/assets/js/app.js')}}"></script>
 </body>
 
 </html>

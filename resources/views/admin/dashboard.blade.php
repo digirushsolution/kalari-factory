@@ -112,7 +112,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/11.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/11.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Smart Mobile Phone</h6>
@@ -135,7 +135,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/07.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/07.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Sports Time Watch</h6>
@@ -158,7 +158,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/17.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/17.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Women Red Heals</h6>
@@ -181,7 +181,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/04.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/04.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Yellow Winter Jacket</h6>
@@ -204,7 +204,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/10.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/10.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Orange Micro Headphone</h6>
@@ -227,7 +227,7 @@
                         <td>
                           <div class="d-flex align-items-center gap-3">
                             <div class="product-box border">
-                               <img src="{{ asset('admin/images/products/05.png')}}" alt="">
+                               <img src="{{ asset('public/admin/images/products/05.png')}}" alt="">
                             </div>
                             <div class="product-info">
                               <h6 class="product-name mb-1">Men Sports Shoes Nike</h6>

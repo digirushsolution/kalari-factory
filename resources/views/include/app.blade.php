@@ -241,5 +241,44 @@ $(this).removeClass('flipped');
 
   </script>
   
+
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const incrementButtons = document.querySelectorAll('.increment');
+    const decrementButtons = document.querySelectorAll('.decrement');
+
+    incrementButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = this.getAttribute('data-product-id');
+            const quantitySpan = document.getElementById('quantity-' + productId);
+            const cartBadge = document.getElementById('cart-badge-' + productId);
+
+            let quantity = parseInt(quantitySpan.innerText);
+            quantity += 1;
+            quantitySpan.innerText = quantity;
+            cartBadge.innerText = quantity;  // Update cart badge count
+        });
+    });
+
+    decrementButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = this.getAttribute('data-product-id');
+            const quantitySpan = document.getElementById('quantity-' + productId);
+            const cartBadge = document.getElementById('cart-badge-' + productId);
+
+            let quantity = parseInt(quantitySpan.innerText);
+            if (quantity > 0) {
+                quantity -= 1;
+                quantitySpan.innerText = quantity;
+                cartBadge.innerText = quantity;  // Update cart badge count
+            }
+        });
+    });
+});
+
+
+</script>
+
   </body>
 </html>

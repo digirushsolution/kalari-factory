@@ -1,7 +1,7 @@
 @extends('include.app')
 @section('content')
 
-<section class="about_banner" style="background-image: url(img/banner_login.png);">
+<section class="about_banner" style="background-image: url(public/asset/img/banner_login.png);">
             <div class="container">
                    <div class="content_about">
                      <h1>Login Now</h1>
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="btn_register_now">
-                        <a href="http://localhost/kalari_factory/register.html">Register Now</a>
+                        <a href="{{route('register')}}">Register Now</a>
                     </div>
                 </form>
         </div>

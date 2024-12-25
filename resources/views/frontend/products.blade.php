@@ -2,7 +2,7 @@
 
 @extends('include.app')
 @section('content')
-<section class="about_banner" style="background-image: url(img/banner_allproduct.png);">
+<section class="about_banner" style="background-image: url(public/asset/img/banner_allproduct.png);">
             <div class="container">
                    <div class="content_about">
                      <h1>All Product</h1>
@@ -22,7 +22,7 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="main_serach_product">
                                         <div class="img_search_product">
-                                            <img src="img/about_kalari_img.png" alt="">
+                                            <img src="{{ asset('public/asset/img/about_kalari_img.png')}}" alt="">
                                         </div>
                                         <div class="content_searches_main">
                                             <div class="heading_searches">
@@ -33,7 +33,73 @@
                                                     </div>
                                                     <div class="add_cart_allprod">
                                                             <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
+                                                            </a>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="main_serach_product">
+                                        <div class="img_search_product">
+                                            <img src="{{ asset('public/asset/img/about_kalari_img.png')}}" alt="">
+                                        </div>
+                                        <div class="content_searches_main">
+                                            <div class="heading_searches">
+                                                <h4>Kalari cheese</h4>
+                                               <div class="price_main_cheese">
+                                                    <div class="number_searches">
+                                                        <p>$12</p>
+                                                    </div>
+                                                    <div class="add_cart_allprod">
+                                                            <a href="#" tabindex="-1">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
+                                                            </a>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="main_serach_product">
+                                        <div class="img_search_product">
+                                            <img src="{{ asset('public/asset/img/about_kalari_img.png')}}" alt="">
+                                        </div>
+                                        <div class="content_searches_main">
+                                            <div class="heading_searches">
+                                                <h4>Kalari cheese</h4>
+                                               <div class="price_main_cheese">
+                                                    <div class="number_searches">
+                                                        <p>$12</p>
+                                                    </div>
+                                                    <div class="add_cart_allprod">
+                                                            <a href="#" tabindex="-1">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
+                                                            </a>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="main_serach_product">
+                                        <div class="img_search_product">
+                                            <img src="{{ asset('public/asset/img/about_kalari_img.png')}}" alt="">
+                                        </div>
+                                        <div class="content_searches_main">
+                                            <div class="heading_searches">
+                                                <h4>Kalari cheese</h4>
+                                               <div class="price_main_cheese">
+                                                    <div class="number_searches">
+                                                        <p>$12</p>
+                                                    </div>
+                                                    <div class="add_cart_allprod">
+                                                            <a href="#" tabindex="-1">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
                                                             </a>
                                                     </div>
                                                </div>
@@ -55,7 +121,7 @@
                                                     </div>
                                                     <div class="add_cart_allprod">
                                                             <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
                                                             </a>
                                                     </div>
                                                </div>
@@ -66,7 +132,7 @@
                                 <div class="col-md-4 mb-3">
                                     <div class="main_serach_product">
                                         <div class="img_search_product">
-                                            <img src="img/about_kalari_img.png" alt="">
+                                            <img src="{{ asset('public/asset/img/about_kalari_img.png')}}" alt="">
                                         </div>
                                         <div class="content_searches_main">
                                             <div class="heading_searches">
@@ -77,73 +143,7 @@
                                                     </div>
                                                     <div class="add_cart_allprod">
                                                             <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
-                                                            </a>
-                                                    </div>
-                                               </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="main_serach_product">
-                                        <div class="img_search_product">
-                                            <img src="img/about_kalari_img.png" alt="">
-                                        </div>
-                                        <div class="content_searches_main">
-                                            <div class="heading_searches">
-                                                <h4>Kalari cheese</h4>
-                                               <div class="price_main_cheese">
-                                                    <div class="number_searches">
-                                                        <p>$12</p>
-                                                    </div>
-                                                    <div class="add_cart_allprod">
-                                                            <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
-                                                            </a>
-                                                    </div>
-                                               </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="main_serach_product">
-                                        <div class="img_search_product">
-                                            <img src="img/about_kalari_img.png" alt="">
-                                        </div>
-                                        <div class="content_searches_main">
-                                            <div class="heading_searches">
-                                                <h4>Kalari cheese</h4>
-                                               <div class="price_main_cheese">
-                                                    <div class="number_searches">
-                                                        <p>$12</p>
-                                                    </div>
-                                                    <div class="add_cart_allprod">
-                                                            <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
-                                                            </a>
-                                                    </div>
-                                               </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <div class="main_serach_product">
-                                        <div class="img_search_product">
-                                            <img src="img/about_kalari_img.png" alt="">
-                                        </div>
-                                        <div class="content_searches_main">
-                                            <div class="heading_searches">
-                                                <h4>Kalari cheese</h4>
-                                               <div class="price_main_cheese">
-                                                    <div class="number_searches">
-                                                        <p>$12</p>
-                                                    </div>
-                                                    <div class="add_cart_allprod">
-                                                            <a href="#" tabindex="-1">
-                                                                <img src="img/shopping-cart.png" alt="search" class="search_shopss">
+                                                                <img src="{{ asset('public/asset/img/shopping-cart.png')}}" alt="search" class="search_shopss">
                                                             </a>
                                                     </div>
                                                </div>
@@ -159,7 +159,7 @@
                                 <!-- Sidebar Widget Start -->
                                 <div class="sidebar-widget">
                                     <div class="widget-search">
-                                        <form action="https://aadhyabedsheet.com/filter" method="GET">
+                                        <form action="" method="GET">
                                             <input type="hidden" name="_token" value="PBDhEmBvCGeCreXM1pMAoSa3N1Ka9Qfwq3f2sNdP" autocomplete="off">
                                              <input type="text" name="search_name" placeholder="Search">
                                             <button><i class="fa fa-search"></i></button>

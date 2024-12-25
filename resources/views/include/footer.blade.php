@@ -65,3 +65,66 @@
                 </div>
             </div>
         </footer>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form_contact">
+                <div class="heading_contact_form">
+                    <h2>Contact Form</h2>
+                </div>
+                <form action="{{ route('franchise.contact.store') }}" method="POST" class="main_form_kalari">
+    @csrf
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="name" placeholder="Name" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="phone" maxlength="10" placeholder="Mobile No." required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="address" placeholder="Address" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="city" placeholder="City" required>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="state" placeholder="State" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <select class="form-select" name="assistance_type" required>
+                <option value="" disabled selected>Services</option>
+                <option value="1">Service 1</option>
+                <option value="2">Service 2</option>
+                <option value="3">Service 3</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" name="zipcode" maxlength="10" placeholder="Zip Code" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <textarea name="message" placeholder="Message" required></textarea>
+        </div>
+    </div>
+    <div class="btn_form_submit">
+        <button type="submit" class="btn_view_all">Submit</button>
+    </div>
+</form>
+
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>

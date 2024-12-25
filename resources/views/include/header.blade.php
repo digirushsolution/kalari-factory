@@ -57,7 +57,7 @@
                            </li>
                            <li>    
                                 <div class="cart_icon">
-                                    <a href="{{route('cart')}}"> <img src="{{ asset('public/asset/img/user_cart.png')}}" alt="search"></a>
+                                    <a href="{{route('login')}}"> <img src="{{ asset('public/asset/img/user_cart.png')}}" alt="search"></a>
                             </div>
                            </li>
                              

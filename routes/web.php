@@ -9,19 +9,19 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogCategoryController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ViewController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FranchiseContactController;
+
+use App\Http\Controllers\UserController;
 
 
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
 //register routes
 Route::get('/register', [RegisterController::class, 'showRegisterForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
 
 //login and logout routes
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/adminlogin', [LoginController::class, 'showLoginForm'])->name('admin.login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('admin.logout');
 
@@ -68,7 +68,7 @@ Route::get('settings/edit-meta/{id}', [SettingController::class, 'editSettingFor
 });
 
 //frontend routes
-Route::get('/home', [ViewController::class,'home'])->name('home');
+Route::get('/', [ViewController::class,'home'])->name('home');
 Route::get('/about', [ViewController::class, 'about'])->name('about');
 Route::get('/contact', [ViewController::class, 'contact'])->name('contact');
 Route::get('/buy-kalari-online', [ViewController::class, 'kalari'])->name('kalari');
@@ -82,3 +82,12 @@ Route::get('/terms-conditions', [ViewController::class, 'termsconditions'])->nam
 Route::get('/login', [ViewController::class, 'login'])->name('login');
 Route::get('/register', [ViewController::class, 'register'])->name('register');
 Route::get('/singlepage', [ViewController::class, 'singlepage'])->name('single_page');
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+
+
+Route::post('/franchise-contact', [FranchiseContactController::class, 'store'])->name('franchise.contact.store');
+
+
+Route::post('/register', [UserController::class, 'store'])->name('user.store');
+
