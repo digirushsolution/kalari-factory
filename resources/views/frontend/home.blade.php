@@ -160,76 +160,89 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
-                <div class="special-menu-item ">
-                    <div class="image">
-                        <img src="{{ asset('public/asset/img/coffee-1.png')}}" alt="">
-                    </div>
-                    <div class="content flex-grow">
-                        <div class="flex items-center">
-                            <h3>CAFE AMERICANO </h3>
-                            <div class="line"></div>
-                            <div class="price">$2.95</div>
-                        </div>
-                        <div class="btn_add_cart">
-                            <p>Espresso shots topped with hot water</p>
-                            <div class="flx_main_cart">
-                                <div class="wrapper">
-                                    <div class="product-qty">
-                                        <button class="decrement" data-product-id="1">-</button>
-                                        <div class="price_add">
-                                            <span class="quantity" id="quantity-1">0</span>
-                                        </div>
-                                        <button class="increment" data-product-id="1">+</button>
-                                    </div>
-                                </div>
-                                <div class="img_add_to_cart">
-                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
-                                        id="cart-icon">
-                                    <span class="cart-badge" id="cart-badge-1">0</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="special-menu-item ">
-                    <div class="image">
-                        <img src="{{ asset('public/asset/img/coffee-2.png')}}" alt="">
-                    </div>
-                    <div class="content flex-grow">
-                        <div class="flex items-center">
-                            <div class="name">
-                                <h3>ESPRESSO MACCHIATO</h3>
-                            </div>
-                            <div class="line"></div>
-                            <div class="price">$2.95</div>
-                        </div>
-                        <div class="btn_add_cart">
-                            <p>Espresso shots topped with hot water</p>
-                            <div class="flx_main_cart">
-                                <div class="wrapper">
-                                    <div class="product-qty">
-                                        <button class="decrement" data-product-id="2">-</button>
-                                        <div class="price_add">
-                                            <span class="quantity" id="quantity-2">0</span>
-                                        </div>
-                                        <button class="increment" data-product-id="2">+</button>
-                                    </div>
-                                </div>
-                                <div class="img_add_to_cart">
-                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
-                                        id="cart-icon">
-                                    <span class="cart-badge" id="cart-badge-2">0</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-6">
+        <!-- Display Kalari Category Products -->
+        <div class="col-lg-6">
+            @foreach($kalariProducts as $product)
+                <div class="special-menu-item">
+                    <div class="image">
+                        <img src="{{ asset('public/storage/' . $product->image) }}" alt="{{ $product->name }}">
+                    </div>
+                    <div class="content flex-grow">
+                        <div class="flex items-center">
+                            <h3>{{ $product->name }}</h3>
+                            <div class="line"></div>
+                            <div class="price">${{ $product->price }}</div>
+                        </div>
+                        <div class="btn_add_cart">
+                            <p>{{ $product->description }}</p>
+                            <div class="flx_main_cart">
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="{{ $product->id }}">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-{{ $product->id }}">0</span>
+                                        </div>
+                                        <button class="increment" data-product-id="{{ $product->id }}">+</button>
+                                    </div>
+                                </div>
+                                <div class="img_add_to_cart">
+                                    <a href="{{route('cart')}}" tabindex="-1">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                         id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-{{ $product->id }}">0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+        <!-- Display Burger Category Products -->
+        <div class="col-lg-6">
+            @foreach($burgerProducts as $product)
+                <div class="special-menu-item">
+                    <div class="image">
+                        <img src="{{ asset('public/storage/' . $product->image) }}" alt="{{ $product->name }}">
+                    </div>
+                    <div class="content flex-grow">
+                        <div class="flex items-center">
+                            <h3>{{ $product->name }}</h3>
+                            <div class="line"></div>
+                            <div class="price">${{ $product->price }}</div>
+                        </div>
+                        <div class="btn_add_cart">
+                            <p>{{ $product->description }}</p>
+                            <div class="flx_main_cart">
+                                <div class="wrapper">
+                                    <div class="product-qty">
+                                        <button class="decrement" data-product-id="{{ $product->id }}">-</button>
+                                        <div class="price_add">
+                                            <span class="quantity" id="quantity-{{ $product->id }}">0</span>
+                                        </div>
+                                        <button class="increment" data-product-id="{{ $product->id }}">+</button>
+                                    </div>
+                                </div>
+                                <div class="img_add_to_cart">
+                                <a href="{{route('cart')}}" tabindex="-1">
+                                    <img src="{{ asset('public/asset/img/shopping-cart.png') }}" alt="cart"
+                                         id="cart-icon">
+                                    <span class="cart-badge" id="cart-badge-{{ $product->id }}">0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+
+
+            <!-- <div class="col-lg-6">
                 <div class="special-menu-item ">
                     <div class="image">
                         <img src="{{ asset('public/asset/img/coffee-3.png')}}" alt="">
@@ -442,7 +455,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="flex_add_btn_bottom">
             <div class="btn_kalari_price">

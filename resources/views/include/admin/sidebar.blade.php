@@ -42,7 +42,20 @@
               </a>
             </li> -->
 
-
+            <li>
+            <a href="{{route('product-categories.index')}}">
+                <div class="parent-icon"><i class="bi bi-grid"></i>
+                </div>
+                <div class="menu-title">Product category</div>
+              </a>
+            </li>
+            <li>
+            <a href="{{route('products-index')}}">
+                <div class="parent-icon"><i class="bi bi-grid"></i>
+                </div>
+                <div class="menu-title">Products</div>
+              </a>
+            </li>
             <li>
               <a href="{{route('blog-category')}}">
                 <div class="parent-icon"><i class="bi bi-grid"></i>

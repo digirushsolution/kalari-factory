@@ -11,7 +11,8 @@ use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FranchiseContactController;
-
+use App\Http\Controllers\ProductCategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 
 
@@ -40,14 +41,9 @@ Route::post('/blog/store', [BlogController::class, 'store'])->name('blog.store')
 Route::get('/blog/edit/{id}', [BlogController::class,'edit'])->name('blog.edit');
 Route::post('/blog/update/{id}', [BlogController::class,'update'])->name('blog.update');
 Route::delete('/blog/{id}', [BlogController::class, 'destroy'])->name('blog.destroy');
-Route::get('our_project/create', [OurProjectController::class, 'create'])->name('our_project.create');
-Route::post('our_project', [OurProjectController::class, 'store'])->name('our_project.store');
-Route::get('our_project/{id}/edit', [OurProjectController::class, 'edit'])->name('our_project.edit');
-Route::put('our_project/{ourProject}', [OurProjectController::class, 'update'])->name('our_project.update');
-Route::delete('our_project/{id}', [OurProjectController::class, 'destroy'])->name('our_project.destroy');
-Route::get('our_project', [OurProjectController::class, 'index'])->name('our_project.index');
 
 
+//blogs category routes
 Route::get('/blog-category', [BlogCategoryController::class, 'index'])->name('blog-category');
 Route::post('/blog-category/store', [BlogCategoryController::class, 'store'])->name('blog-category.store');
 Route::get('/blog-category/edit/{id}', [BlogCategoryController::class,'edit'])->name('blog-category.edit');
@@ -65,7 +61,25 @@ Route::get('/setting', [SettingController::class, 'metaPage'])->name('metaPage')
 Route::post('/settings/update', [SettingController::class, 'updateSetting'])->name('settings.update');
 Route::post('/settings/new-meta', [SettingController::class, 'new_meta_add'])->name('settings.new_meta');
 Route::get('settings/edit-meta/{id}', [SettingController::class, 'editSettingForm'])->name('settings.edit_meta');
+
+//product category routes
+Route::get('/product-categories', [ProductCategoryController::class, 'index'])->name('product-categories.index');
+Route::get('/product-categories/create', [ProductCategoryController::class, 'create'])->name('product-categories.create');
+Route::post('/product-categories', [ProductCategoryController::class, 'store'])->name('product-categories.store');
+Route::get('/product-categories/{id}/edit', [ProductCategoryController::class, 'edit'])->name('product-categories.edit');
+Route::put('/product-categories/{id}', [ProductCategoryController::class, 'update'])->name('product-categories.update');
+Route::delete('/product-categories/{id}', [ProductCategoryController::class, 'destroy'])->name('product-categories.destroy');
+
+// Product Routes
+Route::get('/add-products', [ProductController::class, 'index'])->name('products-index');
+Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+Route::get('/products/{product}/edit', [ProductController::class, 'edit'])->name('products.edit');
+Route::put('/products/{product}', [ProductController::class, 'update'])->name('products.update');
+Route::delete('/products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
+
 });
+
 
 //frontend routes
 Route::get('/', [ViewController::class,'home'])->name('home');
@@ -73,6 +87,8 @@ Route::get('/about', [ViewController::class, 'about'])->name('about');
 Route::get('/contact', [ViewController::class, 'contact'])->name('contact');
 Route::get('/buy-kalari-online', [ViewController::class, 'kalari'])->name('kalari');
 Route::get('/cart', [ViewController::class, 'cart'])->name('cart');
+
+
 Route::get('/cafe', [ViewController::class, 'cafe'])->name('cafe');
 Route::get('/privacy-policy', [ViewController::class, 'privacy'])->name('privacy');
 Route::get('/franchise', [ViewController::class, 'franchise'])->name('franchise');
@@ -84,10 +100,6 @@ Route::get('/register', [ViewController::class, 'register'])->name('register');
 Route::get('/singlepage', [ViewController::class, 'singlepage'])->name('single_page');
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-
-
 Route::post('/franchise-contact', [FranchiseContactController::class, 'store'])->name('franchise.contact.store');
-
-
 Route::post('/register', [UserController::class, 'store'])->name('user.store');
 
